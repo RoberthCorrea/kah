@@ -3,7 +3,6 @@
 #### FUNÇÕES ####
 
 subfnder() {
-  figlet Subfinder
 
   read -p 'identify the domain: ' domain
   while :
@@ -14,7 +13,6 @@ subfnder() {
 }
 
 asetfinder() {
-  figlet Assetfinder
 
   read -p 'identify the domain: ' domain
   while :
@@ -25,7 +23,6 @@ asetfinder() {
 }
 
 findmain() {
-  figlet findomain
 
   read -p 'identify the domain: ' domain
   while :
@@ -36,7 +33,6 @@ findmain() {
 }
 
 validateUrls() {
-  figlet HTTPX
 
   file="tmp/subdomains_unresolved.txt"
   mv tmp/subdomains.txt $file
@@ -46,7 +42,6 @@ validateUrls() {
 
 #### END FUNCTIONS ####
 
-figlet Kah
 
 echo "
 ────────────────────────────────────────────────
