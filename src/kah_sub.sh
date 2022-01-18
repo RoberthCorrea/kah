@@ -1,6 +1,6 @@
 #! /bin/bash
 
-# ### FUNÇÕES ####
+#### FUNÇÕES ####
 
 subfnder() {
   figlet Subfinder
