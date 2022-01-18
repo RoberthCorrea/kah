@@ -48,7 +48,6 @@ validateUrls() {
 
 figlet Kah
 
-notify_enabled=$NOTIFY
 
 echo "
 Procurará por domínio e escreverá tmp/subdomains.txt
@@ -58,7 +57,7 @@ Procurará por domínio e escreverá tmp/subdomains.txt
 2 - Findomain
 
 10 - validate URLS
-15 - enable notify
+
 "
 
 read -p 'Choose your service: ' service
@@ -75,8 +74,5 @@ case $service in
     ;;
   '10' | 10)
     validateUrls
-    ;;
-  '15' | 15)
-    echo "run this: export NOTIFY=true"
     ;;
 esac
