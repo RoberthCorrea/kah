@@ -8,12 +8,7 @@ subfnder() {
   read -p 'identify the domain: ' domain
   while :
   do
-    if [ "$notify_enabled" == "false" ]
-    then
       subfinder -d $domain -silent | anew tmp/subdomains.txt 
-    else
-      subfinder -d $domain -silent | anew tmp/subdomains.txt | notify -silent
-    fi
     sleep 3600
   done
 }
@@ -24,12 +19,7 @@ asetfinder() {
   read -p 'identify the domain: ' domain
   while :
   do
-    if [ "$notify_enabled" == "false" ]
-    then
       assetfinder -subs-only $domain | anew tmp/subdomains.txt 
-    else
-      assetfinder -subs-only $domain | anew tmp/subdomains.txt | notify -silent
-    fi
     sleep 3600
   done
 }
@@ -40,12 +30,7 @@ findmain() {
   read -p 'identify the domain: ' domain
   while :
   do
-    if [ "$notify_enabled" == "false" ]
-    then
       findomain -t $domain -silent | anew tmp/subdomains.txt 
-    else
-      findomain -t $domain -silent | anew tmp/subdomains.txt | notify -silent
-    fi
     sleep 3600
   done
 }
@@ -56,14 +41,7 @@ validateUrls() {
   file="tmp/subdomains_unresolved.txt"
   mv tmp/subdomains.txt $file
 
-  if [ "$notify_enabled" == "false" ]
-  then
     cat $file | httpx -silent | anew tmp/subdomains.txt 
-  else
-    cat $file | httpx -silent | anew tmp/subdomains.txt | notify -silent
-  fi
-
-  rm -rf $file
 }
 
 #### END FUNCTIONS ####
