@@ -85,7 +85,7 @@ Procurará por domínio e escreverá tmp/subdomains.txt
 
 read -p 'Choose your service: ' service
 
-
+case $service in
   '0' | 0)
     subfnder
     ;;
