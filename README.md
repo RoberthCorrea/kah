@@ -7,6 +7,7 @@
 - Findomain
 - HTTPX
 - Subfinder
+- Takeover
 
 ## Como executar
 ```
@@ -45,6 +46,7 @@ Procurará por subdomínios e salvará em tmp/subdomains.txt
 2 - Findomain
 
 10 - validate URLS
+11 - Takeover
 
-Choose your service:
+Escolha seu serviço:
 ```
