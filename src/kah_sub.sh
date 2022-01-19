@@ -39,7 +39,10 @@ validateUrls() {
 
     cat $file | httpx -silent | anew tmp/subdomains.txt 
 }
+takover() {
 
+   python3 takeover.py -l ./tmp/subdomains.txt -v -t 5  | anew ./tmp/takeover_vul.txt
+}
 #### END FUNCTIONS ####
 
 
@@ -64,11 +67,11 @@ Procurará por domínio e escreverá tmp/subdomains.txt
 1 - Assetfinder
 2 - Findomain
 
-10 - validate URLS
-
+10 - validar URLs
+11 - Takeouver
 "
 
-read -p 'Choose your service: ' service
+read -p 'Escolha seu serviço: ' service
 
 case $service in
   '0' | 0)
@@ -82,5 +85,8 @@ case $service in
     ;;
   '10' | 10)
     validateUrls
+    ;;
+  '11' | 11)
+    takover
     ;;
 esac
