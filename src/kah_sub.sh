@@ -4,7 +4,7 @@
 
 subfnder() {
 
-  read -p 'identify the domain: ' domain
+  read -p 'identifique o domínio: ' domain
   while :
   do
       subfinder -d $domain -silent | anew tmp/subdomains.txt 
@@ -14,7 +14,7 @@ subfnder() {
 
 asetfinder() {
 
-  read -p 'identify the domain: ' domain
+  read -p 'identifique o domínio: ' domain
   while :
   do
       assetfinder -subs-only $domain | anew tmp/subdomains.txt 
@@ -24,7 +24,7 @@ asetfinder() {
 
 findmain() {
 
-  read -p 'identify the domain: ' domain
+  read -p 'identifique o domínio: ' domain
   while :
   do
       findomain -t $domain -silent | anew tmp/subdomains.txt 
