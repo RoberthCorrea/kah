@@ -43,6 +43,10 @@ takover() {
 
    python3 takeover.py -l ./tmp/subdomains.txt -v -t 5  | anew ./tmp/takeover_vul.txt
 }
+nucei() {
+
+   nuclei -l ./tmp/subdomains.txt | anew ./tmp/nuclei_vul.txt
+}
 #### END FUNCTIONS ####
 
 
@@ -67,8 +71,9 @@ Procurará por domínio e escreverá tmp/subdomains.txt
 1 - Assetfinder
 2 - Findomain
 
-10 - validar URLs
+10 - Validar URLs
 11 - Takeouver
+12 - Nuclei
 "
 
 read -p 'Escolha seu serviço: ' service
@@ -88,5 +93,8 @@ case $service in
     ;;
   '11' | 11)
     takover
+    ;;
+  '12' | 12)
+    nucei
     ;;
 esac
