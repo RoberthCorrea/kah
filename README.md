@@ -8,6 +8,7 @@
 - HTTPX
 - Subfinder
 - Takeover
+- Nuclei
 
 ## Como executar
 ```
@@ -45,8 +46,9 @@ Procurará por subdomínios e salvará em tmp/subdomains.txt
 1 - Assetfinder
 2 - Findomain
 
-10 - validate URLS
+10 - Validate URLS
 11 - Takeover
+12 - Nuclei
 
 Escolha seu serviço:
 ```
