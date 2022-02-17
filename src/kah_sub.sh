@@ -37,9 +37,10 @@ paraspider() {
   read -p 'identifique o domínio: ' domain
   while :
   do
-   python3 ParamSpider/paramspider.py -d 
-   cat output/*.txt | anew tmp/paramspider.txt
-   rm -rf output/
+       python3 ParamSpider/paramspider.py -d 
+           cat output/*.txt | anew tmp/paramspider.txt
+             rm -rf output/
+      sleep 3600
    done
 }
 
