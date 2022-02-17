@@ -32,6 +32,17 @@ findmain() {
   done
 }
 
+paraspider() {
+
+  read -p 'identifique o domínio: ' domain
+  while :
+  do
+   python3 ParamSpider/paramspider.py -d 
+   cat output/*.txt | anew tmp/paramspider.txt
+   rm -rf output/
+   done
+}
+
 validateUrls() {
 
   file="tmp/subdomains_unresolved.txt"
@@ -47,6 +58,8 @@ nucei() {
 
    nuclei -l ./tmp/subdomains.txt | anew ./tmp/nuclei_vul.txt
 }
+
+
 #### END FUNCTIONS ####
 
 
@@ -70,6 +83,7 @@ Procurará por domínio e escreverá tmp/subdomains.txt
 0 - Subfinder 
 1 - Assetfinder
 2 - Findomain
+3 - Paramspider
 
 10 - Validar URLs
 11 - Takeouver
@@ -88,6 +102,9 @@ case $service in
     ;;
   '2' | 2)
     findmain
+    ;;
+  '3' | 3)
+    paraspider
     ;;
   '10' | 10)
     validateUrls
