@@ -74,6 +74,7 @@ Procurará por domínio e escreverá tmp/subdomains.txt
 10 - Validar URLs
 11 - Takeouver
 12 - Nuclei
+13 - xss_vul
 "
 
 read -p 'Escolha seu serviço: ' service
@@ -96,5 +97,8 @@ case $service in
     ;;
   '12' | 12)
     nucei
+    ;;
+   '13' | 13)
+    .src/kah_xss.sh
     ;;
 esac
