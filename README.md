@@ -9,6 +9,8 @@
 - Subfinder
 - Takeover
 - Nuclei
+- Paramspider
+- Kxss
 
 ## Como executar
 ```
