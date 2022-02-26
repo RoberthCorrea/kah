@@ -38,6 +38,6 @@ case $service in
     ;;
     
   '5' | 5)
-    ./tmp/kah_sub.sh
+    ./src/kah_sub.sh
     ;;
 esac
