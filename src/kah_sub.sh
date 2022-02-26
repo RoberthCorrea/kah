@@ -79,7 +79,7 @@ echo "
 ─██████──████████─██████──██████─██████──██████─
 ──────────────────────────────────────────────── "
 echo "
-Procurará por domínio e escreverá tmp/subdomains.txt
+Os resultados serão salvos em tmp/*.txt
 
 0 - Subfinder 
 1 - Assetfinder
