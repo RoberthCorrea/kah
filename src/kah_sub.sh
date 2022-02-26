@@ -117,6 +117,6 @@ case $service in
     nucei
     ;;
    '13' | 13)
-    .src/kah_xss.sh
+    ./src/kah_xss.sh
     ;;
 esac
