@@ -12,6 +12,12 @@
 - Paramspider
 - Kxss
 
+## Para instalar as ferramentas
+´´´
+chmod +x ./ini.sh; ./ini.sh
+´´´
+
+
 ## Como executar
 ```
 make run
