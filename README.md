@@ -13,6 +13,8 @@
 - Kxss
 
 ## Para instalar as ferramentas
+- Takeover
+- Paramspider
 ```
 chmod +x ./ini.sh; ./ini.sh
 ```
